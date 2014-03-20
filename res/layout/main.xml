@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/localDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="" />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/localTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Current time" />
+    </LinearLayout>
+
+    <com.alouder.polarlayout.PolarLayout
+        android:id="@+id/dial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:spinning="0" >
+
+        <TextView
+            android:id="@+id/text03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_azimuth="0"
+            app:layout_fixed="true"
+            app:layout_orientation="90"
+            app:layout_radius="0.9"
+            android:text="@string/III"
+            android:textColor="#ff0000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_azimuth="90"
+            app:layout_fixed="true"
+            app:layout_orientation="180"
+            app:layout_radius="0.9"
+            android:text="@string/VI"
+            android:textColor="#ff0000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_azimuth="180"
+            app:layout_fixed="true"
+            app:layout_orientation="270"
+            app:layout_radius="0.9"
+            android:text="@string/IX"
+            android:textColor="#ff0000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_azimuth="270"
+            app:layout_fixed="true"
+            app:layout_orientation="0"
+            app:layout_radius="0.9"
+            android:background="@android:color/darker_gray"
+            android:text="@string/XII"
+            android:textColor="#ff0000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_azimuth="-60"
+            app:layout_fixed="false"
+            app:layout_orientation="90"
+            app:layout_radius="0.9"
+            android:text="@string/Asterisk" />
+
+        <TextView
+            android:id="@+id/text02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_azimuth="-30"
+            app:layout_fixed="false"
+            app:layout_orientation="90"
+            app:layout_radius="0.9"
+            android:text="@string/Asterisk" />
+
+        <TextView
+            android:id="@+id/text04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_azimuth="30"
+            app:layout_fixed="false"
+            app:layout_orientation="90"
+            app:layout_radius="0.9"
+            android:text="@string/Asterisk" />
+
+        <TextView
+            android:id="@+id/text05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_azimuth="60"
+            app:layout_fixed="false"
+            app:layout_orientation="90"
+            app:layout_radius="0.9"
+            android:text="@string/Asterisk" />
+
+        <TextView
+            android:id="@+id/text07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_azimuth="120"
+            app:layout_fixed="true"
+            app:layout_orientation="210"
+            app:layout_radius="0.9"
+            android:text="@string/Asterisk" />
+
+        <TextView
+            android:id="@+id/text08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_azimuth="150"
+            app:layout_fixed="true"
+            app:layout_orientation="240"
+            app:layout_radius="0.9"
+            android:text="@string/Asterisk" />
+
+        <TextView
+            android:id="@+id/text10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_azimuth="210"
+            app:layout_fixed="true"
+            app:layout_orientation="300"
+            app:layout_radius="0.9"
+            android:text="@string/Asterisk" />
+
+        <TextView
+            android:id="@+id/text11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_azimuth="240"
+            app:layout_fixed="true"
+            app:layout_orientation="330"
+            app:layout_radius="0.9"
+            android:text="@string/Asterisk" />
+
+        <ImageView
+            android:id="@+id/hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_azimuth="30"
+            app:layout_fixed="false"
+            app:layout_orientation="0"
+            app:layout_radius="0.2"
+            android:background="@drawable/hour"
+            android:contentDescription="@string/hand_of_hour" />
+
+        <ImageView
+            android:id="@+id/minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_azimuth="90"
+            app:layout_fixed="false"
+            app:layout_orientation="0"
+            app:layout_radius="0.3"
+            android:background="@drawable/minute"
+            android:contentDescription="@string/hand_of_minute" />
+
+       <ImageView
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_azimuth="150"
+            app:layout_fixed="true"
+            app:layout_radius="0.8"
+            android:background="@drawable/second"
+            android:contentDescription="@string/hand_of_second" />
+       
+<!--        <TextView -->
+<!--             android:id="@+id/zone" -->
+<!--             android:layout_width="0dip" -->
+<!--             android:layout_height="0dip" -->
+<!--             android:background="@android:color/darker_gray" -->
+<!--             app:layout_azimuth="45" -->
+<!--             app:layout_fixed="false" -->
+<!--             app:layout_orientation="0" -->
+<!--             app:layout_radius="0.3" -->
+<!--             android:text="Current time" /> -->
+       
+        
+    </com.alouder.polarlayout.PolarLayout>
+
+</LinearLayout>

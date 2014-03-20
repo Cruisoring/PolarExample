@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">PolarExample</string>
+
+    <string name="capital_a">A</string>
+    <string name="capital_b">B</string>
+    <string name="III">III</string>
+    <string name="VI">VI</string>
+    <string name="IX">IX</string>
+    <string name="XII">XII</string>
+    <string name="Asterisk">V</string>
+    <string name="hand_of_hour">hand of hour</string>
+    <string name="hand_of_minute">hand of minute</string>
+    <string name="hand_of_second">hand of second</string>
+
+</resources>
